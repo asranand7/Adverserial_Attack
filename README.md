@@ -4,7 +4,7 @@ This repository contains Adversarial Attacks on CIFAR-10 dataset implemented in 
   
 It will include more Adversarial Attacks and Defenses Technique in future as well
 
-*) The CIFAR-10 Network is trained on VGG-16 architecture based on [1] . It reaches a Test accuracy of 85%
+*) The CIFAR-10 Network is trained on VGG-16 architecture based on [1] . It reaches a Test accuracy of 88%
 
 Results :  ( Test Accuracy is evaluated after adding adverserial noise to the test data)
 
