@@ -223,8 +223,8 @@ total_step = len(trainloader)
 train_loss = []  # Store the train_loss per epoch
 test_accuracy = [] # Store the test_accuracy per epoch
 for epoch in range(start_epoch,num_epochs):
-  schedule.step()
   model.train(True)
+  schedule.step()
   epoch_loss  = 0
   i_count = 0
   acc_total = 0
