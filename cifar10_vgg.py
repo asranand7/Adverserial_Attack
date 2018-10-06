@@ -200,6 +200,7 @@ schedule = torch.optim.lr_scheduler.StepLR(optimizer,step_size=20,gamma = 0.7)
 def test():
   correct = 0
   total = 0
+  model.train(False)
   with torch.no_grad():
     for i,(images,labels)in enumerate(testloader):
       if torch.cuda.is_available():
@@ -223,6 +224,7 @@ train_loss = []  # Store the train_loss per epoch
 test_accuracy = [] # Store the test_accuracy per epoch
 for epoch in range(start_epoch,num_epochs):
   schedule.step()
+  model.train(True)
   epoch_loss  = 0
   i_count = 0
   acc_total = 0
