@@ -230,7 +230,7 @@ idx = np.random.randint(0,10000)
 
 sample_image = test_images[idx]
 img_label = test_label[idx]
-# since the image input the function in normalized according to the above mean and std therefore the min_val and max_val is not {0,1} but {-2.117,2.64}
+# since the image input to the DeepFool function in normalized according to the above mean and std therefore the min_val and max_val is not {0,1} but {-2.117,2.64}
 r_tot,loop_i,label,k_i,pert_image = DeepFool(sample_image,model,num_classes = 10,maxiter = 50,min_val = -2.117,max_val = 2.64,true_label = img_label)
 
 print("Clean Label: " ,classes[label]," Adversarial Label:" ,classes[k_i])
