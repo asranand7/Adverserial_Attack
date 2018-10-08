@@ -1,6 +1,7 @@
 This repository contains Adversarial Attacks on CIFAR-10 dataset implemented in Pytorch:
   1) Fast Gradient Sign Method (Untargeted)
   2) Iterative Fast Gradient Sign Method (Untargeted)
+  3) DeepFool
   
 It will include more Adversarial Attacks and Defenses Technique in future as well
 
@@ -37,5 +38,8 @@ References:
     sample size. In Pattern Recognition (ACPR), 2015 3rd IAPR Asian Conference on, pages 730–734. IEEE, 2015.
  
 [2]  Goodfellow, Ian J, Shlens, Jonathon and Szegedy, Christian. "Explaining and harnessing adversarial examples." 
-     arXiv preprint arXiv:1412.6572 (2014): . 
+     arXiv preprint arXiv:1412.6572 (2014): .
+     
+[3]  S. Moosavi-Dezfooli, A. Fawzi and P. Frossard, "DeepFool: A Simple and Accurate Method to Fool Deep Neural Networks," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, 2016, pp. 2574-2582.
+
 
